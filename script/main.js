@@ -67,7 +67,7 @@ const animationTimeline = () => {
         opacity: 0
     })
     .from(".idea-1", 0.7, ideaTextTrans)
-    .from(".hbd-chatbox", 0.3, {
+    .from(".text-box", 0.3, {
         scale: 0.2,
         opacity: 0
     })
