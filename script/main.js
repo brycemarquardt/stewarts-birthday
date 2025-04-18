@@ -95,7 +95,7 @@ const animationTimeline = () => {
             }
         }
     })
-    .to(birthdaySong, 1, { volume: 0, ease: Linear.easeNone }, "+=10");
+    .to(birthdaySong, 1, { volume: 0, ease: Linear.easeNone }, "+=7");
 };
 
 // Start button event listener
