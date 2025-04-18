@@ -120,7 +120,7 @@ const animationTimeline = () => {
         rotation: 150,
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5)
-    }, 0.1)
+    }, 0.1, "+=5.2") // Start after balloons (10.4 seconds total)
     .staggerFromTo(".wish-hbd span", 0.7, {
         scale: 1.4,
         rotationY: 150
@@ -129,12 +129,12 @@ const animationTimeline = () => {
         rotationY: 0,
         color: "#ff69b4",
         ease: Expo.easeOut
-    }, 0.1, "party")
+    }, 0.1)
     .from(".wish h5", 0.5, {
         opacity: 0,
         y: 10,
         skewX: "-15deg"
-    }, "party")
+    })
     .to(".six", 0.5, {
         opacity: 0,
         y: 30,
