@@ -153,12 +153,12 @@ body {
 /* ------------------ UPDATED SIX SECTION ------------------ */
 .six {
   position: relative;
-  top: 8vh;
+  top: 2vh; /* Reduced from 8vh to move content higher */
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem; /* Reduced padding for tighter layout */
   margin: 0 auto;
   max-width: 90%;
 }
@@ -167,7 +167,7 @@ body {
   display: inline-block;
   height: 400px;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased to ensure space for text */
   border-radius: 10px;
 }
 
@@ -280,7 +280,7 @@ body {
   }
   .six img.profile-picture {
     height: 300px;
-    margin-bottom: 15px;
+    margin-bottom: 25px; /* Adjusted for mobile to ensure text visibility */
   }
   .wish-hbd {
     font-size: 2.2em;
