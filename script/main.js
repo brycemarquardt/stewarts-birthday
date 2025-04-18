@@ -100,18 +100,6 @@ const animationTimeline = () => {
         x: 8
     }, "+=1.4")
     .to(".reason-special", 0.7, ideaTextTransLeave, "+=2")
-    .from(".idea-6", 0.8, {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut
-    })
-    .staggerTo(".idea-6 span", 0.8, {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut
-    }, 0.2, "+=1.5")
     .staggerFromTo(".baloons img", 2.5, {
         opacity: 0.9,
         y: 1400
