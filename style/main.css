@@ -70,6 +70,13 @@ body {
   font-size: 3rem;
 }
 
+.four .idea-1 {
+  font-size: 2rem;
+  margin: 0 auto 20px;
+  text-align: center;
+  max-width: 600px;
+}
+
 .four .text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
@@ -81,12 +88,6 @@ body {
 
 .text-box p {
   margin: 0;
-}
-
-.text-box .idea-1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 .text-box .hbd-chatbox {
@@ -164,7 +165,9 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 50px; /* Fixed size for consistency */
+  width: 8vw; /* Responsive size based on viewport width */
+  max-width: 100px; /* Cap maximum size */
+  min-width: 50px; /* Ensure minimum size */
 }
 
 .baloons img:nth-child(even) {
@@ -235,13 +238,14 @@ body {
     width: 90%;
   }
 
-  .four .text-box {
-    width: 90%;
+  .four .idea-1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    max-width: 90%;
   }
 
-  .text-box .idea-1 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+  .four .text-box {
+    width: 90%;
   }
 
   .text-box .fake-btn {
@@ -289,7 +293,9 @@ body {
   }
 
   .baloons img {
-    width: 30px; /* Smaller size for mobile */
+    width: 10vw; /* Slightly larger for mobile */
+    max-width: 80px; /* Cap maximum size */
+    min-width: 40px; /* Ensure minimum size */
   }
 
   .baloons img:nth-child(even) {
