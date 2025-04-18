@@ -1,13 +1,8 @@
 const animationTimeline = () => {
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-    const hbd = document.getElementsByClassName("wish-hbd")[0];
     const birthdaySong = document.querySelector('.birthday-song');
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-        .split("")
-        .join("</span><span>")}</span>`;
-
-    hbd.innerHTML = `<span>${hbd.innerHTML
         .split("")
         .join("</span><span>")}</span>`;
 
@@ -73,13 +68,20 @@ const animationTimeline = () => {
         rotationZ: -15,
         ease: Elastic.easeOut.config(1, 0.5)
     }, "sixArrival")
-    .staggerFrom([".wish-hbd span", ".wish h5"], 0.8, {
+    .from(".wish-hbd", 0.8, {
         opacity: 0,
         y: -30,
         scale: 1.2,
         rotationZ: 15,
         ease: Elastic.easeOut.config(1, 0.5)
-    }, 0.2, "sixArrival")
+    }, "sixArrival")
+    .from(".wish h5", 0.8, {
+        opacity: 0,
+        y: -30,
+        scale: 1.2,
+        rotationZ: 15,
+        ease: Elastic.easeOut.config(1, 0.5)
+    }, "sixArrival+=0.2")
     // --- END Cascading group ---
 
     .to(".six", 0.5, { opacity: 0, y: 30, zIndex: "-1" }, "+=5")
