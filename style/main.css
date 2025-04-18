@@ -145,20 +145,19 @@ body {
   padding: 3px 5px;
 }
 
-.idea-5 span,
-.wish-hbd span {
+.idea-5 span {
   display: inline-block;
 }
 
 /* ------------------ UPDATED SIX SECTION ------------------ */
 .six {
   position: relative;
-  top: 2vh; /* Reduced from 8vh to move content higher */
+  top: 2vh;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem; /* Reduced padding for tighter layout */
+  padding: 1rem;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -167,7 +166,7 @@ body {
   display: inline-block;
   height: 400px;
   max-width: 100%;
-  margin-bottom: 30px; /* Increased to ensure space for text */
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 
@@ -180,6 +179,7 @@ body {
   font-size: 2.5em;
   margin: 0;
   text-transform: uppercase;
+  white-space: nowrap; /* Ensures text stays on a single line */
 }
 
 .wish h5 {
@@ -280,10 +280,11 @@ body {
   }
   .six img.profile-picture {
     height: 300px;
-    margin-bottom: 25px; /* Adjusted for mobile to ensure text visibility */
+    margin-bottom: 25px;
   }
   .wish-hbd {
     font-size: 2.2em;
+    white-space: nowrap; /* Ensures text stays on a single line on mobile */
   }
   .wish h5 {
     font-size: 1.8rem;
