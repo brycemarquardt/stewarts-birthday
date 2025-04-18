@@ -173,6 +173,24 @@ body {
   margin: 10px 0 0;
 }
 
+.video-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.team-video {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
@@ -220,5 +238,10 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+
+  .team-video {
+    max-width: 95%;
+    max-height: 95%;
   }
 }
