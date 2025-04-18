@@ -139,7 +139,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 30,
         zIndex: "-1"
-    })
+    }, "+=5") // Delay fade-out by 5 seconds
     .from(".video-display", 1, {
         opacity: 0,
         visibility: "hidden"
