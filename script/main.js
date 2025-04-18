@@ -75,6 +75,11 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
     })
+    .from(".idea-1", 0.7, ideaTextTrans)
+    .from(".hbd-chatbox", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
     .from(".fake-btn", 0.3, {
         scale: 0.2,
         opacity: 0,
@@ -98,8 +103,6 @@ const animationTimeline = () => {
             y: -150
         },
         "+=1")
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
     .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
