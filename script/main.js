@@ -30,9 +30,9 @@ const animationTimeline = () => {
         visibility: "visible",
         onStart: () => {
             try {
-                document.querySelector('.intro-song').play();
+                document.querySelector('.birthday-song').play();
             } catch (error) {
-                console.error("Error playing intro song:", error);
+                console.error("Error playing birthday song:", error);
             }
         }
     })
@@ -118,14 +118,7 @@ const animationTimeline = () => {
             skewY: "-5deg",
             y: 50,
             z: 10,
-            opacity: 0,
-            onStart: () => {
-                try {
-                    document.querySelector('.song').play();
-                } catch (error) {
-                    console.error("Error playing tysonsong:", error);
-                }
-            }
+            opacity: 0
         },
         "+=1.5"
     )
