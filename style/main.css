@@ -235,20 +235,21 @@ body {
 .video-display {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Changed from center to flex-start to align video to the top */
-  height: 100vh;
+  align-items: flex-start;
+  height: calc(100vh - 40px); /* Adjusted to account for browser UI */
   width: 100vw;
   position: absolute;
   top: 0;
   visibility: hidden;
+  overflow-y: auto; /* Allow scrolling if needed */
 }
 
 .team-video {
   max-width: 80%;
-  max-height: 80%;
+  max-height: 70%; /* Reduced from 80% to ensure the video fits */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 20px; /* Added margin to provide some space from the top */
+  margin-top: 20px;
 }
 
 .nine p {
@@ -315,8 +316,12 @@ body {
   }
   .team-video {
     max-width: 95%;
-    max-height: 95%;
-    margin-top: 10px; /* Smaller margin on mobile for better fit */
+    max-height: 85%; /* Adjusted for mobile to fit better */
+    margin-top: 10px;
+  }
+  .video-display {
+    height: 100vh; /* Revert to full height on mobile */
+    overflow-y: auto;
   }
   .two {
     font-size: 1.3rem;
