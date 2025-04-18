@@ -1,5 +1,3 @@
-// Enhanced version with cascading (micro-delayed) arrival effect
-
 const animationTimeline = () => {
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
@@ -97,7 +95,7 @@ const animationTimeline = () => {
             }
         }
     })
-    .to(birthdaySong, 1, { volume: 0, ease: Linear.easeNone }, "+=7"); // Fade song 7s after video starts
+    .to(birthdaySong, 1, { volume: 0, ease: Linear.easeNone }, "+=7");
 };
 
 // Start button event listener
