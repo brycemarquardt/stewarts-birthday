@@ -164,13 +164,14 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
+  width: 50px; /* Fixed size for consistency */
 }
 
 .baloons img:nth-child(even) {
   left: -10%;
 }
 
-.b Faloons img:nth-child(odd) {
+.baloons img:nth-child(odd) {
   right: -10%;
 }
 
@@ -285,5 +286,38 @@ body {
   .team-video {
     max-width: 95%;
     max-height: 95%;
+  }
+
+  .baloons img {
+    width: 30px; /* Smaller size for mobile */
+  }
+
+  .baloons img:nth-child(even) {
+    left: 5%; /* Adjusted to stay within viewport */
+  }
+
+  .baloons img:nth-child(odd) {
+    right: 5%; /* Adjusted to stay within viewport */
+  }
+
+  .baloons img:nth-child(3n + 0) {
+    left: 40%; /* Centered more evenly */
+  }
+
+  /* Distribute balloons more evenly across the screen */
+  .baloons img:nth-child(4n + 1) {
+    left: 10%;
+  }
+
+  .baloons img:nth-child(4n + 2) {
+    right: 10%;
+  }
+
+  .baloons img:nth-child(4n + 3) {
+    left: 60%;
+  }
+
+  .baloons img:nth-child(4n + 4) {
+    right: 60%;
   }
 }
