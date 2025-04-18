@@ -62,7 +62,7 @@ body {
 }
 
 .two {
-  font-size: 1.5rem; /* Increased from 1.2rem for better visibility */
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
@@ -235,7 +235,7 @@ body {
 .video-display {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Changed from center to flex-start to align video to the top */
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -248,6 +248,7 @@ body {
   max-height: 80%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Added margin to provide some space from the top */
 }
 
 .nine p {
@@ -315,13 +316,9 @@ body {
   .team-video {
     max-width: 95%;
     max-height: 95%;
-  }
-  .baloons img {
-    width: 250vw;
-    max-width: 750px;
-    min-width: 400px;
+    margin-top: 10px; /* Smaller margin on mobile for better fit */
   }
   .two {
-    font-size: 1.3rem; /* Increased for mobile view */
+    font-size: 1.3rem;
   }
 }
