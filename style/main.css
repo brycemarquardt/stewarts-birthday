@@ -161,7 +161,7 @@ body {
 
 .six img {
   display: inline-block;
-  height: 350px;
+  height: 500px; /* Increased from 350px */
   max-width: 100%;
   margin-bottom: 20px;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 .wish h5 {
-  font-size: 2rem;
+  font-size: 3rem; /* Increased from 2rem */
   font-weight: lighter;
   margin: 10px 0 0;
 }
@@ -303,7 +303,7 @@ body {
   }
 
   .six img {
-    height: 200px;
+    height: 300px; /* Increased from 200px */
     margin-bottom: 15px;
   }
 
@@ -312,7 +312,7 @@ body {
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 2rem; /* Increased from 1.4rem */
   }
 
   .nine p {
