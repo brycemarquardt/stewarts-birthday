@@ -165,21 +165,33 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 20vw; /* Super big size based on viewport width */
-  max-width: 200px; /* Cap maximum size */
-  min-width: 100px; /* Ensure minimum size */
+  width: 200vw; /* 10x previous size (20vw * 10) */
+  max-width: 1000px; /* Cap maximum size */
+  min-width: 500px; /* Ensure minimum size */
 }
 
-.baloons img:nth-child(even) {
-  left: -10%;
+.baloons img:nth-child(6n + 1) {
+  left: 5%;
 }
 
-.baloons img:nth-child(odd) {
-  right: -10%;
+.baloons img:nth-child(6n + 2) {
+  left: 20%;
 }
 
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
+.baloons img:nth-child(6n + 3) {
+  left: 35%;
+}
+
+.baloons img:nth-child(6n + 4) {
+  right: 35%;
+}
+
+.baloons img:nth-child(6n + 5) {
+  right: 20%;
+}
+
+.baloons img:nth-child(6n + 6) {
+  right: 5%;
 }
 
 .seven {
@@ -293,37 +305,32 @@ body {
   }
 
   .baloons img {
-    width: 25vw; /* Super big size for mobile */
-    max-width: 150px; /* Cap maximum size */
-    min-width: 80px; /* Ensure minimum size */
+    width: 250vw; /* 10x previous size (25vw * 10) */
+    max-width: 750px; /* Cap maximum size */
+    min-width: 400px; /* Ensure minimum size */
   }
 
-  .baloons img:nth-child(even) {
-    left: 5%; /* Adjusted to stay within viewport */
+  .baloons img:nth-child(6n + 1) {
+    left: 5%;
   }
 
-  .baloons img:nth-child(odd) {
-    right: 5%; /* Adjusted to stay within viewport */
+  .baloons img:nth-child(6n + 2) {
+    left: 20%;
   }
 
-  .baloons img:nth-child(3n + 0) {
-    left: 40%; /* Centered more evenly */
+  .baloons img:nth-child(6n + 3) {
+    left: 35%;
   }
 
-  /* Distribute balloons more evenly across the screen */
-  .baloons img:nth-child(4n + 1) {
-    left: 10%;
+  .baloons img:nth-child(6n + 4) {
+    right: 35%;
   }
 
-  .baloons img:nth-child(4n + 2) {
-    right: 10%;
+  .baloons img:nth-child(6n + 5) {
+    right: 20%;
   }
 
-  .baloons img:nth-child(4n + 3) {
-    left: 60%;
-  }
-
-  .baloons img:nth-child(4n + 4) {
-    right: 60%;
+  .baloons img:nth-child(6n + 6) {
+    right: 5%;
   }
 }
