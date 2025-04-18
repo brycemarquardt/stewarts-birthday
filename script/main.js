@@ -140,14 +140,10 @@ const animationTimeline = () => {
         y: 30,
         zIndex: "-1"
     })
-    .to(birthdaySong, 1, {
-        volume: 0,
-        ease: Linear.easeNone
-    })
     .from(".video-display", 1, {
         opacity: 0,
         visibility: "hidden"
-    }, "-=1")
+    })
     .to(".video-display", 1, {
         opacity: 1,
         visibility: "visible",
@@ -158,7 +154,11 @@ const animationTimeline = () => {
                 console.error("Error playing team video:", error);
             }
         }
-    });
+    })
+    .to(birthdaySong, 1, {
+        volume: 0,
+        ease: Linear.easeNone
+    }, "+=10"); // Delay audio fade by 10 seconds after video starts
 }
 
 // Start button event listener
