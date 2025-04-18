@@ -154,12 +154,32 @@ body {
   position: relative;
   top: 10vh;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .six img {
   display: inline-block;
   height: 350px;
   max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.six .wish {
+  text-align: center;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
 }
 
 .baloons img {
@@ -207,18 +227,6 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-}
-
-.wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.wish h5 {
-  font-size: 2rem;
-  font-weight: lighter;
-  margin: 10px 0 0;
 }
 
 .video-display {
@@ -292,6 +300,11 @@ body {
 
   .idea-5 span {
     display: block;
+  }
+
+  .six img {
+    height: 200px;
+    margin-bottom: 15px;
   }
 
   .wish-hbd {
