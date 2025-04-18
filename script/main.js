@@ -1,6 +1,7 @@
 const animationTimeline = () => {
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
+    const birthdaySong = document.querySelector('.birthday-song');
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
         .split("")
@@ -30,7 +31,8 @@ const animationTimeline = () => {
         visibility: "visible",
         onStart: () => {
             try {
-                document.querySelector('.birthday-song').play();
+                birthdaySong.volume = 1; // Ensure volume is full at start
+                birthdaySong.play();
             } catch (error) {
                 console.error("Error playing birthday song:", error);
             }
@@ -220,10 +222,14 @@ const animationTimeline = () => {
         y: 30,
         zIndex: "-1",
     })
+    .to(birthdaySong, 1, {
+        volume: 0,
+        ease: Linear.easeNone
+    })
     .from(".video-display", 1, {
         opacity: 0,
         visibility: "hidden"
-    })
+    }, "-=1")
     .to(".video-display", 1, {
         opacity: 1,
         visibility: "visible",
