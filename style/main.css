@@ -165,9 +165,9 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 8vw; /* Responsive size based on viewport width */
-  max-width: 100px; /* Cap maximum size */
-  min-width: 50px; /* Ensure minimum size */
+  width: 20vw; /* Super big size based on viewport width */
+  max-width: 200px; /* Cap maximum size */
+  min-width: 100px; /* Ensure minimum size */
 }
 
 .baloons img:nth-child(even) {
@@ -293,9 +293,9 @@ body {
   }
 
   .baloons img {
-    width: 10vw; /* Slightly larger for mobile */
-    max-width: 80px; /* Cap maximum size */
-    min-width: 40px; /* Ensure minimum size */
+    width: 25vw; /* Super big size for mobile */
+    max-width: 150px; /* Cap maximum size */
+    min-width: 80px; /* Ensure minimum size */
   }
 
   .baloons img:nth-child(even) {
