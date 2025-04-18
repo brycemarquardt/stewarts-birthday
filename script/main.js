@@ -113,7 +113,7 @@ const animationTimeline = () => {
         x: 25,
         y: -25,
         rotationZ: -45
-    }, "-=2")
+    }, "-=7.7") // Start 5.2 seconds into balloon animation (half of 10.4 seconds)
     .staggerFrom(".wish-hbd span", 0.7, {
         opacity: 0,
         y: -50,
