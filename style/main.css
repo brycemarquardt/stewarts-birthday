@@ -119,14 +119,26 @@ body {
   margin-top: 10px;
 }
 
+.five .reason-special {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.five .reason-special p {
+  margin: 0;
+}
+
+.five .reason-special .idea-5 {
+  font-size: 4rem;
+  margin-top: 10px;
+}
+
 .idea-3 strong {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
-}
-
-.five .idea-5 {
-  font-size: 4rem;
 }
 
 .idea-5 span,
@@ -243,6 +255,15 @@ body {
   }
 
   .five .idea-combined .idea-3 {
+    margin-top: 8px;
+  }
+
+  .five .reason-special {
+    font-size: 1.5rem;
+  }
+
+  .five .reason-special .idea-5 {
+    font-size: 3rem;
     margin-top: 8px;
   }
 
