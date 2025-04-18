@@ -219,6 +219,21 @@ const animationTimeline = () => {
         opacity: 0,
         y: 30,
         zIndex: "-1",
+    })
+    .from(".video-display", 1, {
+        opacity: 0,
+        visibility: "hidden"
+    })
+    .to(".video-display", 1, {
+        opacity: 1,
+        visibility: "visible",
+        onStart: () => {
+            try {
+                document.querySelector('.team-video').play();
+            } catch (error) {
+                console.error("Error playing team video:", error);
+            }
+        }
     });
 }
 
